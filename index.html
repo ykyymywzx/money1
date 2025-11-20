@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>慧学堂 | 中小学知识付费平台</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="badge">专注中小学生的知识付费学习</p>
+      <h1>慧学堂 · 让学习材料购买更简单</h1>
+      <p class="subtitle">一站式获取课本同步讲解、提分题库、名师微课与学习规划，支持安全在线支付与家长监管。</p>
+      <div class="hero__actions">
+        <button class="btn btn--primary">立即体验</button>
+        <button class="btn btn--ghost">查看课程</button>
+      </div>
+      <div class="hero__stats">
+        <div>
+          <span class="number">5000+</span>
+          <span>精选学习文档</span>
+        </div>
+        <div>
+          <span class="number">300+</span>
+          <span>名师微课</span>
+        </div>
+        <div>
+          <span class="number">98%</span>
+          <span>续费家长满意度</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <div class="section__header">
+        <div>
+          <p class="badge">资源精选</p>
+          <h2>按需挑选文档与课程</h2>
+          <p class="section__sub">覆盖小学到初中，提供可预览摘要、支付后解锁全文的优质资源。</p>
+        </div>
+        <div class="filters">
+          <label class="filter">
+            <span>年级</span>
+            <select id="gradeFilter">
+              <option value="all">全部</option>
+              <option value="小学">小学</option>
+              <option value="初中">初中</option>
+            </select>
+          </label>
+          <label class="filter">
+            <span>科目</span>
+            <select id="subjectFilter">
+              <option value="all">全部</option>
+              <option value="语文">语文</option>
+              <option value="数学">数学</option>
+              <option value="英语">英语</option>
+              <option value="科学">科学</option>
+            </select>
+          </label>
+          <label class="filter search">
+            <span class="sr-only">搜索</span>
+            <input id="searchInput" type="search" placeholder="搜索关键字：例如 写作 提分 或 小升初" />
+          </label>
+        </div>
+      </div>
+      <div id="resourceList" class="card-grid"></div>
+    </section>
+
+    <section class="section section--highlight">
+      <div class="section__header">
+        <div>
+          <p class="badge">安全支付</p>
+          <h2>家长放心，学生易用</h2>
+          <p class="section__sub">支持微信/支付宝支付，家长账户统一管理，学习记录实时可视化。</p>
+        </div>
+      </div>
+      <div class="features">
+        <article class="feature-card">
+          <div class="icon">🔒</div>
+          <h3>实名认证与家长监管</h3>
+          <p>学生账户绑定家长手机号，消费提醒与月度账单自动推送。</p>
+        </article>
+        <article class="feature-card">
+          <div class="icon">💳</div>
+          <h3>灵活付费</h3>
+          <p>单篇购买、课程包与月度会员任你选择，支持优惠券与校园团购。</p>
+        </article>
+        <article class="feature-card">
+          <div class="icon">🧭</div>
+          <h3>学习路径推荐</h3>
+          <p>根据学情测评智能匹配资料，避免无效刷题，精准提升成绩。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__header">
+        <div>
+          <p class="badge">学习流程</p>
+          <h2>三步轻松开启付费学习</h2>
+          <p class="section__sub">注册/绑定家长 → 选择文档 → 预览摘要后安全支付解锁。</p>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="timeline__item">
+          <div class="timeline__circle">1</div>
+          <div>
+            <h3>注册与学情测评</h3>
+            <p>10 分钟在线测评，生成个性化学情报告与资料清单。</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__circle">2</div>
+          <div>
+            <h3>预览与收藏</h3>
+            <p>查看文档摘要与样例页，加入“学习清单”方便家长统一结算。</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__circle">3</div>
+          <div>
+            <h3>支付并跟学</h3>
+            <p>支持微信/支付宝扫码支付，付费后解锁全文，学习进度即时同步。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <h3>慧学堂</h3>
+      <p>面向中小学生的高质量知识付费平台，精选文档、题库与微课，助力成绩稳步提升。</p>
+    </div>
+    <div>
+      <h4>联系我们</h4>
+      <ul>
+        <li>合作邮箱：hello@huixuetang.com</li>
+        <li>服务热线：400-123-456</li>
+        <li>工作时间：周一至周五 9:00-18:00</li>
+      </ul>
+    </div>
+    <div>
+      <h4>产品保障</h4>
+      <ul>
+        <li>支持电子发票</li>
+        <li>7x24 技术支持</li>
+        <li>多终端同步学习</li>
+      </ul>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
